@@ -1,0 +1,10 @@
+domains
+A,B,C=integers
+predicates
+range(integer,integer,integer)
+clauses
+range(Low,Low,High).
+range(Out,Low,High):-
+     Rn=Low+1,
+     Rn<=High,
+     range(Out,Rn,High).

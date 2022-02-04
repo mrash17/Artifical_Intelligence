@@ -1,0 +1,20 @@
+domains
+x,y=integer
+predicates
+add(x,y)
+sub(x,y)
+mult(x,y)
+div(x,y)
+clauses
+add(A,B):-
+  Z=A+B,
+  write(Z),nl.
+sub(A,B):-
+  Z=A-B,
+  write(Z),nl.
+mult(A,B):-
+  Z=A*B,
+  write(Z),nl.
+div(A,B):-
+  Z=A/B,
+  write(Z),nl.
