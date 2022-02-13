@@ -1,0 +1,10 @@
+domains
+n,f=integer
+predicates
+factorial(n,f)
+clauses
+factorial(0,1) if !.
+factorial(N,F):-
+     N1=N-1,
+     factorial(N1,F1),
+     F=N*F1.
